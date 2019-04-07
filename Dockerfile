@@ -15,5 +15,6 @@ RUN git clone https://github.com/cquery-project/cquery.git --recursive \
     && mkdir build && cd build \
     && cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=release -DCMAKE_EXPORT_COMPILE_COMMANDS=YES \
     && cmake --build . \
-    && cmake --build . --target install \
-    && export PATH=$PATH:/cquery/build
+    && cmake --build . --target install
+
+ENV PATH $PATH:/cquery/build
