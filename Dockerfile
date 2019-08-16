@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER k-ishigaki <k-ishigaki@frontier.hokudai.ac.jp>
+LABEL maintainer "Kazuki Ishigaki <k-ishigaki@frontier.hokudai.ac.jp>"
 
 RUN apt-get update && apt-get install -y \
     build-essential \
