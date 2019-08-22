@@ -5,8 +5,7 @@ RUN apt-get update && apt-get install -y \
     cmake \
     git \
     libncurses-dev \
-    zlib1g-dev \
-    && apt-get clean
+    zlib1g-dev
 
 RUN git clone https://github.com/cquery-project/cquery.git --recursive \
     && cd cquery \
